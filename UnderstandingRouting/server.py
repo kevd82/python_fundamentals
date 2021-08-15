@@ -16,6 +16,10 @@ def say(name):
 @app.route("/repeat/<int:number>/<string:word>")
 def repeat(number, word):
     return f"{word * number}"
+
+@app.route("/<string:url>")
+def error(url):
+    return f"Sorry, no response at {url}. Please try again"
     
     
 if __name__=="__main__":     
