@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Survey</title>
+</head>
+
+<body>
+    <div class="container">
+
+
+
+        <form action="/process" method="post" class="col-sm-6">
+            <div class="row">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="" class="form-control">
+            </div>
+            <div class="row">
+                <label for="favorite_language">Favorite Language</label>
+                <select id="favlang" name="favorite_language">
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="C#">C#</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="location">Dojo Location</label>
+                <select id="loc" name="dojo_location">
+                    <option value="Dallas">Dallas</option>
+                    <option value="San_jose">San Jose</option>
+                    <option value="Seattle">Seattle</option>
+                    <option value="Oakland">Oakland</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="comments">Comments</label>
+                <input type="text" name="comments" id="" class="form-control">
+            </div>
+            <button class="btn-danger mt=3">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
