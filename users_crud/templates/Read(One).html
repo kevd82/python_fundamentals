@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show User</title>
+</head>
+<body>
+    <h1>User {{user.id}}</h1>
+    <p>Full Name: {{user.first_name}} {{user.last_name}}</p>
+    <p>Email:  {{user.email}}</p>
+    <p>Created at:  {{user.created_at.strftime("%b %d %Y")}}</p>
+    <p>Last Updated On:  {{user.updated_at.strftime("%b %d %Y")}}</p>
+    <p><a href="/Edit/{{user.id}}">Edit</a> <a href="/Delete/{{user.id}}">Delete</a></p>
+</body>
+</html>

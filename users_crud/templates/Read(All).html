@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Users</title>
+</head>
+<body>
+    <h1>All Users</h1>
+{% for user in users %}
+    <p>First Name: {{user.first_name}}</p>
+    <p>Last Name: {{user.last_name}}</p>
+    <p>Email: {{user.email}}</p>
+    <p>Actions: <a href="/Read(One)/{{user.id}}">Show</a> <a href="/Edit/{{user.id}}">Edit</a> <a href="/Delete/{{user.id}}">Delete</a></p>
+{% endfor %}
+    <h2><a href="/Add">Add User</a></h2>
+</body>
+</html>
